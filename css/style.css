@@ -438,8 +438,14 @@ ul.no-bullets {
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 25.00%;
     padding: 20px;
+}
+
+.column-one {
+    float: top;
+    width: 80%;
+    padding: 0px;
 }
 
 .column-three {
@@ -498,6 +504,16 @@ ul.no-bullets {
     clear: both;
     display: table;
 }
+
+.center-video {
+  text-align: center;
+}
+
+.center-img {
+  text-align: center;
+
+}
+
 
 .column-new {
     float: left;
