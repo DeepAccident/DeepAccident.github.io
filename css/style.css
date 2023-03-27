@@ -442,6 +442,14 @@ ul.no-bullets {
     padding: 20px;
 }
 
+.column-center {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .column-one {
     float: top;
     width: 80%;
@@ -503,6 +511,8 @@ ul.no-bullets {
     content: "";
     clear: both;
     display: table;
+    /*added to center align*/
+    justify-content: center;
 }
 
 .center-video {
