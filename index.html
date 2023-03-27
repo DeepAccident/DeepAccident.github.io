@@ -101,17 +101,29 @@
                             <div class="about-logo">
                                 <h2 style="color: white;">About DeepAccident</span>
                                 </h2>
+<!--                                <p style="font-size:16px">-->
+<!--                                    DeepAccident, short for <em>vehicle-to-everything simulation</em>, is the first synthetic V2X-aided collaborative perception dataset in autonomous driving developed by XXXXX to stimulate-->
+<!--                                    multi-agent multi-modality multi-task perception research. Due to the immaturity of V2X and the cost of simultaneously operating multiple autonomous vehicles, it is very expensive and laborious to build such a real-world-->
+<!--                                    dataset for research communities. Therefore, we use highly realistic CARLA-SUMO co-simulation to ensure the representativeness of our dataset compared to real-world driving scenarios.-->
+<!--                                </p>-->
+<!--                                <p style="font-size:16px">-->
+<!--                                    DeepAccident provides: (1) well-synchronized sensor recordings from road-side unit (RSU) and multiple vehicles that enable multi-agent perception, (2) multi-modality sensor streams that facilitate multi-modality perception, and (3) diverse well-annotated ground-->
+<!--                                    truths that support various perception tasks including detection, tracking, and segmentation. Meanwhile, we build an open-source testbed and provide a benchmark for the state-of-the-art collaborative perception algorithms-->
+<!--                                    on three tasks, including detection, tracking and segmentation.-->
+<!--                                </p>-->
                                 <p style="font-size:16px">
-                                    DeepAccident, short for <em>vehicle-to-everything simulation</em>, is the first synthetic V2X-aided collaborative perception dataset in autonomous driving developed by XXXXX to stimulate
-                                    multi-agent multi-modality multi-task perception research. Due to the immaturity of V2X and the cost of simultaneously operating multiple autonomous vehicles, it is very expensive and laborious to build such a real-world
-                                    dataset for research communities. Therefore, we use highly realistic CARLA-SUMO co-simulation to ensure the representativeness of our dataset compared to real-world driving scenarios.
+                                    DeepAccident is the first <b>V2X</b> (<em>vehicle-to-everything simulation</em>) autonomous driving dataset that contains diverse <b>collision accidents</b> that commonly occur in real-world driving scenarios.
+                                    It is developed by <a href="http://luoping.me/" style="color: inherit;">HKU MMLab</a> at HKU and Huawei Corporation.
+                                    This proposed dataset intensively focuses on autonomous driving safety, which has led to the proposal of a new task called <b>End-to-End Motion and Accident Prediction</b>
+                                    and can serve as <b>direct metrics for evaluating the safety</b> of autonomous driving algorithms.
+                                    Note that the direct safety evaluation for autonomous driving is not possible with the existing real-world datasets since they only contain normal and safe scenarios.
+                                    In addition, other simulator-based datasets do not focus on evaluating the safety of autonomous driving algorithms and only contain little or zero accident scenarios.
+                                    The accident scenarios in DeepAccident are designed and synthesized via a realistic simulator - CARLA, under different weather and light conditions to provide more diversity.
                                 </p>
                                 <p style="font-size:16px">
-                                    DeepAccident provides: (1) well-synchronized sensor recordings from road-side unit (RSU) and multiple vehicles that enable multi-agent perception, (2) multi-modality sensor streams that facilitate multi-modality perception, and (3) diverse well-annotated ground
-                                    truths that support various perception tasks including detection, tracking, and segmentation. Meanwhile, we build an open-source testbed and provide a benchmark for the state-of-the-art collaborative perception algorithms
-                                    on three tasks, including detection, tracking and segmentation.
+                                    DeepAccident provides: (1) multi-modality sensor data including multi-view RGB cameras and LiDAR, (2) synchronized sensor recordings from four vehicles and one infrastruture for each scenario thus enabling V2X research, and (3) diverse ground truth labels that
+                                    support both perception tasks (3D object detection & tracking and BEV semantic segmentation) and prediction tasks (motion and accident prediction).
                                 </p>
-
                             </div>
                         </div>
                     </div>
@@ -150,7 +162,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-3 wow fadeInRight animated" data-wow-animation-name="none">
                     <h3 style="color: #656565">Accident Scenarios</h3>
-                    <p style="font-size: 14px;"><em>xxxx add descriptions.</em></p>
+                    <p style="font-size: 14px;"><em>Diverse accident scenarios across different places under various weather and lighting conditions.</em></p>
                 </div>
 
                 <div class="col-lg-9 col-sm-9 text-center wow fadeInRight animated" data-wow-animation-name="none">
@@ -183,7 +195,8 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-3 wow fadeInRight animated" data-wow-animation-name="none">
                     <h3 style="color: #656565">Multi-Agent Data</h3>
-                    <p style="font-size: 14px;"><em>xxxx add descriptions.</em></p>
+                    <p style="font-size: 14px;"><em>Synchronized data between four V2X vehicles and one V2X infrastructure to provide
+                    diverse viewpoints.</em></p>
                 </div>
 
                 <div class="col-lg-9 col-sm-9 text-center wow fadeInRight animated" data-wow-animation-name="none">
@@ -240,7 +253,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-3 wow fadeInRight animated" data-wow-animation-name="none">
                     <h3 style="color: #656565">Multi-Modality Sensors</h3>
-                    <p style="font-size: 14px;"><em>xxxx add descriptions. </em></p>
+                    <p style="font-size: 14px;"><em>Multi-modality sensors including LiDAR and multi-view RGB cameras on each V2X agent.</em></p>
                 </div>
 
                 <div class="col-lg-9 col-sm-9 text-center wow fadeInRight animated" data-wow-animation-name="none">
@@ -264,7 +277,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-3 wow fadeInRight animated" data-wow-animation-name="none">
                     <h3 style="color: #656565">Diverse Annotations</h3>
-                    <p style="font-size: 14px;"><em>xxxx add descriptions.</em> </p>
+                    <p style="font-size: 14px;"><em>Diverse ground truth labels that support motion & accident prediction, semantic segmentation, and 3D object detection & tracking</em> </p>
                 </div>
 
                 <div class="col-lg-9 col-sm-9 text-center wow fadeInRight animated" data-wow-animation-name="none">
@@ -272,7 +285,7 @@
                         <div class="column-four">
                             <div class=frame-l>
                                 <img src="img/dataset_features/motion_prediction.png" alt="LiDAR" class="img-valign-shadow">
-                                <div>Motion prediction label</div>
+                                <div>Motion & accident prediction</div>
                             </div>
                         </div>
                         <div class="column-four">
@@ -544,10 +557,13 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="copyright">
-                            <p><span>&copy; xxxx Lab 2023 All rights reserved.
+                            <p><span>&copy; HKU MMLab and Huawei Corp. 2023 All rights reserved.
                                 </span> </p>
                         </div>
+<!--                    <p style="font-size:16px">-->
+                    <p style="font-size: 5px; !important;">Website template from <a href="https://ai4ce.github.io/V2X-Sim/">V2X-Sim</a></p>
                     </div>
+
 
                     <div class="col-lg-6">
                         <ul class="social-network">

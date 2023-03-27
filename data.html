@@ -61,10 +61,10 @@
 		</div>
 	</div>
 	</section>
-	<br>
-	<br>
+<!--	<br>-->
+<!--	<br>-->
 
-	<div><img src="img/SensorSetupNew.PNG" alt="Sensor Setup" class="center" width="250"></div>
+<!--	<div><img src="img/SensorSetupNew.PNG" alt="Sensor Setup" class="center" width="250"></div>-->
 
 	<section id="content">
 	<div class="container">
@@ -74,30 +74,42 @@
 			<div class="row"> 
 			<div class="col-md-12">
 			<div class="about-logo">
-				<h3>Extensive Sensor Suite</span></h3>
+				<h3>Overview of Collected Data</span></h3>
+<!--				<p style="font-size:16px">-->
+<!--				To encourage research in multi-modality sensing, we try to offer the most extensive sensor suite based on CARLA. On carside, the sensors are set up -->
+<!--				under the configuration shown above. Each vehicle is equipped with 6 <a href="#RGB-Camera-Link">RGB</a>/<a href="#Depth-Camera-Link">depth</a>/<a href="#Sem-Camera-Link">semantic-->
+<!--				 segmentation</a> cameras, one <a href="#BEV-Sem-Camera-Link">BEV semantic segmentation</a> -->
+<!--				camera, one <a href="#Li-Link">LiDAR</a> and <a href="#Li-Link">semantic LiDAR</a> sensor, one <a href="#Geo-Link">IMU</a> and one <a href="#Geo-Link">GNSS</a> sensor. </p>-->
+<!--				<p style="font-size:16px">-->
+<!--				On roadside, we attach 4 <a href="#RGB-Camera-Link">RGB</a> cameras, one <a href="#BEV-Sem-Camera-Link">BEV semantic segmentation</a> camera, one <a href="#Li-Link">LiDAR</a> and one <a href="#Li-Link">semantic LiDAR</a> to the infrastructure. Both the cameras on vehicles-->
+<!--				and roadside infrastructures are able to cover 360° to ensure a full-view perception. -->
+<!--				</p>-->
+<!--				<p style="font-size:16px">-->
+<!--					Examples of the <a href="#processed">processed data</a> are included at the bottom of this page.-->
+<!--				</p>-->
+
 				<p style="font-size:16px">
-				To encourage research in multi-modality sensing, we try to offer the most extensive sensor suite based on CARLA. On carside, the sensors are set up 
-				under the configuration shown above. Each vehicle is equipped with 6 <a href="#RGB-Camera-Link">RGB</a>/<a href="#Depth-Camera-Link">depth</a>/<a href="#Sem-Camera-Link">semantic
-				 segmentation</a> cameras, one <a href="#BEV-Sem-Camera-Link">BEV semantic segmentation</a> 
-				camera, one <a href="#Li-Link">LiDAR</a> and <a href="#Li-Link">semantic LiDAR</a> sensor, one <a href="#Geo-Link">IMU</a> and one <a href="#Geo-Link">GNSS</a> sensor. </p>
+				We have designed various types of <a href="#Designed-Scenario-Link">accident scenarios</a> that frequently happen in real-world driving scenarios according to <a href="https://www.nhtsa.gov/sites/nhtsa.gov/files/pre-crash_scenario_typology-final_pdf_version_5-2-07.pdf">NHTSA's pre-crash report</a>.
+				For each scenario, we have set four vehicles and one infrastructure to record a full set of sensor data, including both <a href="#RGB-Camera-Link">multi-view RGB cameras</a> and <a href="#LiDAR-Link">LiDAR</a>,
+				thus enabling V2X autonomous driving research. The four vehicles include the two designed colliding vehicles and another two vehicles following behind them to provide diverse viewpoints.
+				As for the infrastructure side's sensors, we make the sensors face toward the intersection and mount at a random height from 3 to 5 meters, as shown <a href="#Infra-Camera-Link">here</a>.
 				<p style="font-size:16px">
-				On roadside, we attach 4 <a href="#RGB-Camera-Link">RGB</a> cameras, one <a href="#BEV-Sem-Camera-Link">BEV semantic segmentation</a> camera, one <a href="#Li-Link">LiDAR</a> and one <a href="#Li-Link">semantic LiDAR</a> to the infrastructure. Both the cameras on vehicles
-				and roadside infrastructures are able to cover 360° to ensure a full-view perception. 
+<!--				The data are collected across <a href="#Map-Link">seven towns</a> in CARLA, which covers a wide range of different scenes from urban streets to highway and rural areas.-->
+				Data were collected from a wide range of different scenes, including urban streets, highways, and rural areas across <a href="#Map-Link">seven towns</a> in CARLA.
 				</p>
-				<p style="font-size:16px">
-					Examples of the <a href="#processed">processed data</a> are included at the bottom of this page. 
-				</p>
+
 				<hr>
 
-				<h3><a id="RGB-Camera-Link">Designed Scenarios</a></span></h3>
+				<h3><a id="Designed-Scenario-Link">Designed Scenarios</a></span></h3>
 					<div class="center-img">
                             <img width="1000" src="./img/scenario_type.jpg" alt="A description of your image">
                     </div>
 					<ul style="font-size:16px">
 						<li><b>Designed accident scenarios:</b>
 							<ul>
-								<li>A1 – running against red lights, A2 – xxxx</li>
-								<li>B: Similar to A, but in unsignalized intersections</li>
+								<li> A - scenarios at signalized intersections: <br>(1) running against a red light at four-way intersections, (2) left turn against a red light at four-way intersections, (3) unprotected left turn at four-way intersections,
+									(4) right turn against left turn at four-way intersections, (5) right turn against left turn at three-way intersections, (6) go straight against right turn at three-way intersections,</li>
+								<li>B: Similar to A, but at unsignalized intersections</li>
 							</ul>
 						</li>
 					</ul>
@@ -106,14 +118,19 @@
 				<h3><a id="RGB-Camera-Link">RGB Cameras</a></span></h3>
 
 					<ul style="font-size:16px">
-						<li><b>On vehicle</b>
+						<li><a id="Vehicle-Camera-Link"><b>On vehicle</b></a>
 							<ul>
-								<li>70° horizontal FoV (Front/FrontLeft/FrontRight/BackLeft/BackRight)</li>
-								<li>110° horizontal FoV (Back)</li>
+								<li>70° horizontal FoV (Front/FrontLeft/FrontRight/BackLeft/BackRight Camera)</li>
+								<li>110° horizontal FoV (Back Camera)</li>
 								<li>image size: 1600x900 pixels</li>
 							</ul>
 						</li>
 					</ul>
+						<style>
+							#Vehicle-Camera-Link {
+								color: inherit; /* or whatever the color of the surrounding text is */
+							}
+						</style>
 
 
 					<div class="row">
@@ -146,14 +163,19 @@
 					</div>
 
 					<ul style="font-size:16px">
-						<li> <b>On infrastructure</b>
+						<li> <a id="Infra-Camera-Link"><b>On infrastructure</b></a>
 							<ul>
-								<li>70° horizontal FoV (Front/FrontLeft/FrontRight/BackLeft/BackRight)</li>
-								<li>110° horizontal FoV (Back)</li>
+								<li>70° horizontal FoV (Front/FrontLeft/FrontRight/BackLeft/BackRight Camera)</li>
+								<li>110° horizontal FoV (Back Camera))</li>
 								<li>image size: 1600x900 pixels</li>
 							</ul>
 						</li>
 					</ul>
+						<style>
+							#Infra-Camera-Link {
+								color: inherit; /* or whatever the color of the surrounding text is */
+							}
+						</style>
 
 				<div class="row">
 						<div class="column-center">
@@ -187,7 +209,7 @@
 					<br>
 					<hr>
 
-				<h3><a id="RGB-Camera-Link">LiDAR Sensor</a></span></h3>
+				<h3><a id="LiDAR-Link">LiDAR Sensor</a></span></h3>
 
 					<ul style="font-size:16px">
 						<li><b>On vehicle</b>
@@ -210,7 +232,7 @@
 				<ul style="font-size:16px">
 						<li> <b>On infrastructure</b>
 							<ul>
-							<li>installed at the height of 3 to 5 meters</li>
+							<li>mounted at the height of 3 to 5 meters</li>
 							<li>32 channels</li>
 							<li>70m max range</li>
 							<li>400,000 points per second</li>
@@ -238,14 +260,22 @@
 			<div class="row"> 
 			<div class="col-md-12">
 			<div class="about-logo">
-				<h3>Town Maps</span></h3>
-				<p style="font-size:16px"> Currently, CARLA's Town 3, Town 4, and Town 5 are considered in our dataset. Town 3, the most complex town in CARLA, 
-					is a mid-sized town with features such as slopes, small junctions, and roundables. Town 4 is a small town with a highway 
-					system that encloses it. While Town 5 is the largest town among the three with multiple lanes per direction. We use the 
-					above-mentioned CARLA-SUMO co-simulation to spawn multiple types of vehicles such as cars, bicycles, motorcycles, 
-					and emergency vehicles to the town as retrieve sensor data from the recording files.  </p>
+				<h3><a id="Map-Link">Town Maps</span></a></h3>
+<!--				<p style="font-size:16px"> Currently, CARLA's Town 3, Town 4, and Town 5 are considered in our dataset. Town 3, the most complex town in CARLA, -->
+<!--					is a mid-sized town with features such as slopes, small junctions, and roundables. Town 4 is a small town with a highway -->
+<!--					system that encloses it. While Town 5 is the largest town among the three with multiple lanes per direction. We use the -->
+<!--					above-mentioned CARLA-SUMO co-simulation to spawn multiple types of vehicles such as cars, bicycles, motorcycles, -->
+<!--					and emergency vehicles to the town as retrieve sensor data from the recording files.  </p>-->
+				<p style="font-size:16px"> The current version of DeepAccident data is collected across seven CARLA towns - Town01, Town02, Town03, Town04, Town05, Town07,
+				and Town10.
+				</p>
+				<p style="font-size:16px"> Town01 and Town02 are small towns with narrow roads. Town03 is the most complex town in CARLA up to the time of collecting DeepAccident (0.9.13)
+				with unique road layouts like uphill roads and roundabouts. Town04 is a town connected with highway entrances and exists. Town05 is the largest map in terms of
+					the map area and has multiple driving lanes per direction. Town07 covers rural regions such as some corn fields and contains curvy mountain roads.
+					Town10 is the most visually realistic town in CARLA and is a modern downtown area.
+				</p>
 				<p style="font-size:16px">More details about the towns in CARLA can be found at 
-				<a href="https://carla.readthedocs.io/en/0.9.11/core_map/#carla-maps">CARLA's documentations.</a> </p>
+				<a href="https://carla.readthedocs.io/en/0.9.13/core_map/#carla-maps">CARLA's documentations.</a> </p>
 				
 			</div> 
 			</div>
@@ -331,7 +361,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="copyright">
-						<p><span>&copy; xxxx Lab 2023 All rights reserved.
+						<p><span>&copy; HKU MMLab and Huawei Corp. 2023 All rights reserved.
 						</span> </p>
 					</div>
 				</div>
