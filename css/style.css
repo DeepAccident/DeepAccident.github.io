@@ -446,6 +446,12 @@ ul.no-bullets {
     padding: 20px;
 }
 
+.column-big {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+
 .column-center {
     display: inline-block;
     text-align: center;
@@ -487,6 +493,19 @@ ul.no-bullets {
     width: 50%;
     padding: 15px;
 }
+
+.column-large {
+    float: left;
+    width: 70%;
+    padding: 0px;
+}
+
+/*.column-two {*/
+/*    display: inline-block;*/
+/*    text-align: center;*/
+/*    width: 40%;*/
+/*    padding: 0px;*/
+/*}*/
 
 .center {
     display: block;
