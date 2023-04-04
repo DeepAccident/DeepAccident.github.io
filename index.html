@@ -54,6 +54,9 @@
 <!--                                <a href="tutorial.html" target="_blank">Tutorial</a>-->
 <!--                            </li>-->
                             <li>
+                                <a href="https://arxiv.org/pdf/2304.01168.pdf">Paper</a>
+                            </li>
+                            <li>
                                 <a href="benchmarks.html">Benchmarks</a>
                             </li>
                             <li>
@@ -159,14 +162,14 @@
         </div>
 
         <div class="container">
-            <div class="row">
+            <div class="row nomargin">
                 <div class="col-lg-3 col-sm-3 wow fadeInRight animated" data-wow-animation-name="none">
                     <h3 style="color: #656565">Accident Scenarios</h3>
                     <p style="font-size: 14px;"><em>Diverse accident scenarios across different places under various weather and lighting conditions.</em></p>
                 </div>
 
                 <div class="col-lg-9 col-sm-9 text-center wow fadeInRight animated" data-wow-animation-name="none">
-                    <div class="row">
+                    <div class="row nomargin">
 
                         <div class="column-three">
                             <div class=frame-r>
@@ -192,7 +195,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row nomargin" style="margin-top: 20px;">
                 <div class="col-lg-3 col-sm-3 wow fadeInRight animated" data-wow-animation-name="none">
                     <h3 style="color: #656565">Multi-Agent Data</h3>
                     <p style="font-size: 14px;"><em>Synchronized data between four V2X vehicles and one V2X infrastructure to provide
@@ -200,17 +203,17 @@
                 </div>
 
                 <div class="col-lg-9 col-sm-9 text-center wow fadeInRight animated" data-wow-animation-name="none">
-                    <div class="row">
+                    <div class="row nomargin" style="margin-top: 12px;">
 
                         <div class="column-two">
-                            <div class=frame-r>
+                            <div class=frame-r2>
                                 <img src="img/dataset_features/multi_agents_icon.png" alt="LiDAR" class="img-valign-shadow">
                                 <div>Collaborative autonomous driving</div>
                             </div>
                         </div>
                         <div class="column-two">
-                            <div class=frame-r>
-                                <img src="img/dataset_features/multi_agents_example2.jpg" alt="LiDAR" class="img-valign-shadow">
+                            <div class=frame-r2>
+                                <img src="img/dataset_features/multi_agents_example.jpg" alt="LiDAR" class="img-valign-shadow">
                                 <div>V2X settings of DeepAccident</div>
                             </div>
                         </div>
@@ -250,14 +253,14 @@
 <!--                </div>-->
 <!--            </div>-->
 
-            <div class="row">
+            <div class="row nomargin" style="margin-top: 10px;">
                 <div class="col-lg-3 col-sm-3 wow fadeInRight animated" data-wow-animation-name="none">
                     <h3 style="color: #656565">Multi-Modality Sensors</h3>
                     <p style="font-size: 14px;"><em>Multi-modality sensors including LiDAR and multi-view RGB cameras on each V2X agent.</em></p>
                 </div>
 
                 <div class="col-lg-9 col-sm-9 text-center wow fadeInRight animated" data-wow-animation-name="none">
-                    <div class="row">
+                    <div class="row nomargin" style="margin-top: 35px;">
                         <div class="column-two">
                             <div class=frame>
                                 <img src="img/Features/lidar.png" alt="LiDAR" class="img-valign">
@@ -274,14 +277,17 @@
                 </div>
             </div>
 
-            <div class="row">
+
+            <div class="row  nomargin">
                 <div class="col-lg-3 col-sm-3 wow fadeInRight animated" data-wow-animation-name="none">
                     <h3 style="color: #656565">Diverse Annotations</h3>
-                    <p style="font-size: 14px;"><em>Diverse ground truth labels that support motion & accident prediction, semantic segmentation, and 3D object detection & tracking</em> </p>
+                    <p style="font-size: 14px;"><em>Ground truth labels for motion and accident prediction, semantic segmentation, and 3D object detection and tracking</em> </p>
                 </div>
+<!--                Diverse ground truth labels for motion & accident prediction, semantic segmentation, and 3D object detection & tracking-->
+<!--                Ground truth labels for motion and accident prediction, semantic segmentation, and 3D object detection and tracking-->
 
                 <div class="col-lg-9 col-sm-9 text-center wow fadeInRight animated" data-wow-animation-name="none">
-                    <div class="row">
+                    <div class="row nomargin" style="margin-top: 28px;">
                         <div class="column-four">
                             <div class=frame-l>
                                 <img src="img/dataset_features/motion_prediction.png" alt="LiDAR" class="img-valign-shadow">
@@ -308,8 +314,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
 
@@ -404,8 +408,14 @@
                     <br>
                     <h2>Motion and Accident Prediction Task</h2>
 <!--                    <h3 style="color: black;">BEV Semantic Segmentation</h3>-->
+<!--                    <div class="center-video">-->
+<!--                            <video width="1000" height=auto loop autoplay muted style="border-radius: 10px; box-shadow: 0 0 20px black; display: flex; justify-content: center;">-->
+<!--                                <source src="img/motion_prediction_task.mp4" type="video/mp4">-->
+<!--                                Your browser does not support the video tag.-->
+<!--                            </video>-->
+<!--                    </div>-->
                     <div class="center-video">
-                            <video width="1200" height=auto loop autoplay muted style="border-radius: 10px; box-shadow: 0 0 20px black;">
+                            <video width="1650" height=auto loop autoplay muted style="border-radius: 10px; box-shadow: 0 0 20px black;justify-content: center;">
                                 <source src="img/motion_prediction_task.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -413,7 +423,7 @@
 <!--                    <br>-->
 <!--                    <h3 style="color: black;">Multi-View Cameras</h3>-->
 <!--                    <div class="center-video">-->
-<!--                            <video width="800" height=auto loop autoplay muted style="border-radius: 10px; box-shadow: 0 0 20px black;">-->
+<!--                            <video width="1000" height=auto loop autoplay muted style="border-radius: 10px; box-shadow: 0 0 20px black;">-->
 <!--                                <source src="img/Diverse_driving_scenario.mp4" type="video/mp4">-->
 <!--                                Your browser does not support the video tag.-->
 <!--                            </video>-->
@@ -480,9 +490,21 @@
                             <img width="1200" src="./img/sensor_visualization.png" alt="A description of your image">
                     </div>
 
+                    <p style="font-size:16px"> If you find the dataset helpful, please consider citing us.</p>
+
+                    <p style="font-size:16px">
+                        @InProceedings{Wang_2023_DeepAccident, <br>
+                        &emsp;&emsp;&emsp;&emsp;title = {DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving}, <br>
+                        &emsp;&emsp;&emsp;&emsp;author = {Wang, Tianqi and Kim, Sukmin and Ji, Wenxuan and Xie, Enze and Ge, Chongjian and Chen, Junsong and Li, Zhenguo and Ping, Luo}, <br>
+                        &emsp;&emsp;&emsp;&emsp;journal = {arXiv preprint arXiv:2304.01168}, <br>
+                        &emsp;&emsp;&emsp;&emsp;year = {2023} <br>
+                        }
+                    </p>
+
                 </div>
                 </div>
             </div>
+
 
 <!--        <section class="hero-text">-->
 <!--                <div class="container">-->

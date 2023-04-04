@@ -65,6 +65,16 @@ h6 {
     margin-bottom: 0;
 }
 
+.row.first-row {
+  margin-bottom: 40px; /* Increase the margin as needed */
+}
+
+.row.nomargin.align-items-center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 img.img-polaroid {
     margin: 0 0 20px 0;
 }
@@ -224,10 +234,20 @@ figcaption {
     height: auto;
 }
 
+/*.frame {*/
+/*    height: 120px;*/
+/*    !*can be anything*!*/
+/*    width: 120px;*/
+/*    !*can be anything*!*/
+/*    display: inline-block;*/
+/*    vertical-align: top;*/
+/*    !*not required*!*/
+/*    position: relative;*/
+/*}*/
 .frame {
-    height: 120px;
+    height: 110px;
     /*can be anything*/
-    width: 120px;
+    width: 110px;
     /*can be anything*/
     display: inline-block;
     vertical-align: top;
@@ -249,8 +269,33 @@ figcaption {
 
 .frame-r {
     height: 180px;
+    /*height: 155px;*/
     /*can be anything*/
     width: 275px;
+    /*can be anything*/
+    display: inline-block;
+    vertical-align: top;
+    /*not required*/
+    position: relative;
+}
+
+/*.frame-r2 {*/
+/*    !*height: 180px;*!*/
+/*    height: 155px;*/
+/*    !*can be anything*!*/
+/*    width: 275px;*/
+/*    !*can be anything*!*/
+/*    display: inline-block;*/
+/*    vertical-align: top;*/
+/*    !*not required*!*/
+/*    position: relative;*/
+/*}*/
+
+.frame-r2 {
+    /*height: 180px;*/
+    height: 171px;
+    /*can be anything*/
+    width: 303px;
     /*can be anything*/
     display: inline-block;
     vertical-align: top;
@@ -286,6 +331,7 @@ figcaption {
     right: 0;
     background: black;
     color: white;
+    /*margin-bottom: 0px;*/
     margin-bottom: 0px;
     font-family: sans-serif;
     font-size: 16px;
@@ -295,13 +341,44 @@ figcaption {
     transition: visibility 0s, opacity 0.5s linear;
 }
 
-.frame-l div,
+.frame-l div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
 .frame-r div {
     position: absolute;
     bottom: 0;
     right: 0;
     background: black;
     color: white;
+    /*margin-bottom: 0px;*/
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.frame-r2 div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    /*margin-bottom: 0px;*/
     margin-bottom: 0px;
     font-family: sans-serif;
     font-size: 16px;
@@ -330,6 +407,10 @@ figcaption {
 
 .frame:hover,
 .frame-r:hover {
+    cursor: pointer;
+}
+
+.frame-r2:hover {
     cursor: pointer;
 }
 
@@ -372,7 +453,8 @@ figcaption {
     visibility: visible;
     font-size: 14px;
     opacity: 0.6;
-    bottom: 22.5px;
+    /*bottom: 22.5px;*/
+    /*bottom: 0px;*/
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -396,7 +478,19 @@ figcaption {
     font-size: 14px;
     visibility: visible;
     opacity: 0.6;
-    bottom: 12.5px;
+    /*bottom: 12.5px;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.frame-r2:hover div {
+    width: 303px;
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    visibility: visible;
+    opacity: 0.6;
+    /*bottom: 12.5px;*/
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -478,6 +572,7 @@ ul.no-bullets {
     float: left;
     width: 25%;
     padding: 0px;
+    /*added*/
 }
 
 .column-five {
@@ -491,7 +586,9 @@ ul.no-bullets {
 .column-two {
     float: left;
     width: 50%;
-    padding: 15px;
+    height: 160px;
+    /*width: 275px;*/
+    padding: 0px;
 }
 
 .column-large {
@@ -540,6 +637,10 @@ ul.no-bullets {
 
 .center-video {
   text-align: center;
+  /*  */
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .center-img {
@@ -1082,8 +1183,10 @@ section.hero-text h1 {
     display: inline-table;
     border: 1px solid #C8C8C8;
     background: transparent;
-    color: #57068c;
-    border-bottom: 3px solid #57068c;
+    /*color: #57068c;*/
+    /*border-bottom: 3px solid #57068c;*/
+    color: var(--bkg-color);
+    border-bottom: 3px solid var(--bkg-color);
 }
 
 .cta-text {
